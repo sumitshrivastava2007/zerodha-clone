@@ -13,7 +13,7 @@ const Home = () => {
     const verifyUser = async () => {
       try {
         const { data } = await axios.post(
-          "https://zerodha-clone-edcx.onrender.com",
+          "http://localhost:3002",
           {},
           { withCredentials: true },
         );
@@ -41,7 +41,7 @@ const Home = () => {
   const handleLogout = async () => {
     try {
       await axios.post(
-        "https://zerodha-clone-edcx.onrender.com/logout",
+        "http://localhost:3002/logout",
         {},
         { withCredentials: true },
       );
