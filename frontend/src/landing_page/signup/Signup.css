@@ -1,0 +1,110 @@
+
+/* Signup Container */
+.form_container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #f5f7fa;
+  font-family: Arial, sans-serif;
+}
+
+/* Heading */
+.form_container h2 {
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 25px;
+}
+
+/* Form Card */
+.form_container form {
+  width: 100%;
+  max-width: 400px;
+  background: #ffffff;
+  padding: 35px;
+  border-radius: 12px;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.08);
+  box-sizing: border-box;
+}
+
+/* Input Groups */
+.form_container form div {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+/* Labels */
+.form_container label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #444;
+  margin-bottom: 8px;
+}
+
+/* Input Fields */
+.form_container input {
+  padding: 12px 14px;
+  border: 1px solid #d5dbe3;
+  border-radius: 6px;
+  font-size: 14px;
+  outline: none;
+  transition: 0.2s ease;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.form_container input:focus {
+  border-color: #387ed1;
+  box-shadow: 0 0 0 3px rgba(56, 126, 209, 0.12);
+}
+
+/* Submit Button */
+.form_container button {
+  width: 100%;
+  padding: 13px;
+  background: #387ed1;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.form_container button:hover {
+  background: #2965ad;
+}
+
+/* Login Link */
+.form_container span {
+  display: block;
+  text-align: center;
+  margin-top: 22px;
+  font-size: 14px;
+  color: #666;
+}
+
+.form_container span a {
+  color: #387ed1;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.form_container span a:hover {
+  text-decoration: underline;
+}
+
+/* Mobile Responsive */
+@media (max-width: 480px) {
+  .form_container form {
+    width: 90%;
+    padding: 25px;
+  }
+
+  .form_container h2 {
+    font-size: 24px;
+  }
+}
